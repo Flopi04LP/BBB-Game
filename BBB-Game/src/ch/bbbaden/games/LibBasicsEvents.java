@@ -32,8 +32,9 @@ public class LibBasicsEvents {
         while (!exit) {
             // Draw game board
             csi.restore();
-            csi.print(0, 0, Integer.toString(anzahlZuege), CSIColor.AQUA);
+            
             // Draw dynamic part    
+            csi.print(0, 0, Integer.toString(anzahlZuege), CSIColor.AQUA);
             csi.print(playerX, playerY, "@", CSIColor.ATOMIC_TANGERINE);
             // Push to screen
             csi.refresh();
